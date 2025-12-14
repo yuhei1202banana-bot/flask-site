@@ -1,11 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Flask Website</title>
+  <title>Yuhei Suzuki | Flask Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>はじめてのFlaskサイト</h1>
-  <p>FlaskでWebサイトを作っています。</p>
+
+<!-- 背景レイヤー -->
+<div class="bg-gradient"></div>
+
+<!-- ヒーロー -->
+<header class="hero">
+  <div class="hero-content">
+    <span class="badge">Flask / Python / Web</span>
+    <h1>
+      思考から<br>
+      Webを設計する
+    </h1>
+    <p>
+      Flaskを使い、構造・意図・運用までを含めた<br>
+      シンプルで説明可能なWebサイトを構築しています。
+    </p>
+  </div>
+</header>
+
+<!-- メイン -->
+<main class="container">
+
+  <section class="card">
+    <h2>About</h2>
+    <p>
+      本サイトはPythonのWebフレームワーク「Flask」を用いて設計・実装しました。
+      フロントエンドからデプロイまで一貫して自分で構築しています。
+    </p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>設計</h3>
+      <p>
+        フォルダ構成、責務分離、拡張性を意識した設計を行います。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>実装</h3>
+      <p>
+        HTML / CSS / Flask を用いた、読みやすく保守しやすいコード。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>公開</h3>
+      <p>
+        GitHub とクラウドサービスを使った継続運用・改善。
+      </p>
+    </div>
+  </section>
+
+  <section class="card emphasis">
+    <h2>Philosophy</h2>
+    <p>
+      見た目だけでなく、「なぜそう作られているか」を説明できること。
+      それが長く使われるWebの条件だと考えています。
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 Yuhei Suzuki</p>
+</footer>
+
 </body>
 </html>

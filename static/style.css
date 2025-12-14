@@ -1,0 +1,114 @@
+
+/* ===== リセット & 基本 ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  color: #e5e7eb;
+  background: #0f172a;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* ===== 背景グラデーション ===== */
+.bg-gradient {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, #2563eb55, transparent 40%),
+    radial-gradient(circle at 80% 30%, #9333ea55, transparent 40%),
+    radial-gradient(circle at 50% 80%, #14b8a655, transparent 40%);
+  z-index: -1;
+}
+
+/* ===== ヒーロー ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin: 0 0 24px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  color: #cbd5f5;
+}
+
+/* ===== メイン ===== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 120px;
+}
+
+/* ===== ===== カード ===== */
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card h2, .card h3 {
+  margin-top: 0;
+}
+
+.card h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #dbeafe;
+}
+
+/* ===== グリッド ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* ===== 強調カード ===== */
+.emphasis {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ===== フッター ===== */
+.footer {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 14px;
+  color: #94a3b8;
+}
